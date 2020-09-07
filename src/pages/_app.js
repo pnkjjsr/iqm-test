@@ -6,7 +6,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "@styles/theme";
 import "@styles/global.scss";
 
-import tracker from "@utils/trackers";
 import LoaderPage from "@components/LoaderPage";
 
 export default function MyApp(props) {
@@ -19,7 +18,7 @@ export default function MyApp(props) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
 
-    tracker();
+    
   }, []);
 
   return (
